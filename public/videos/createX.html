@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VidBits</title>
+    <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+    <link rel='stylesheet' href='../stylesheets/style.css'>
+  </head>
+  <body>
+    <div class="title-container">
+      <div class="title-logo">
+        <img src="../img/logo.svg" alt="">
+      </div>
+    </div>
+      <div id="Save-Video-Container" class="contents-container">
+          <h1 id="create-video-h1">Save a Video</h1>
+          <form class="input-form" action="/videos" method="post">
+            <label class="form-label" for="title">Video Title</label>
+            <input id="title-input" name="title" maxlength="50" value=""/>
+            <label class="form-label" for="description">Description</label>
+            <textarea id="description-input" name="description" maxlength="50">
+            </textarea>
+            <label class="form-label" for="url">url</label>
+            <input id="url-input" name="url" maxlength="200" value=""/>
+            <input id="submit-button" name="submit-button" type="submit" value="Save"/>
+          </form>
+      </div>
+  </body>
+</html>

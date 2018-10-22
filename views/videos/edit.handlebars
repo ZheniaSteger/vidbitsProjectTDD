@@ -1,0 +1,5 @@
+<h1>Edit "{{video.title}}"</h1>
+
+<form method="post" action="/videos/{{video.id}}/updates">
+  {{> videos/form video=video}}
+</form>
