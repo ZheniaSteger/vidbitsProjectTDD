@@ -2,17 +2,17 @@
   <div class="video-card">
     <div class="video-title">
       <h1>{{ video.title }}</h1>
-      <a id="edit" href="/videos/{{ video.id }}/deletions">
+      <a id="edit" href="/videos/{{video.id}}/deletions">
 
-        <form method="post" action="/videos/{{ video.id }}/deletions">
+        <form method="post" action="/videos/{{video.id}}/deletions">
           <input id="delete" type="submit" value="Delete">
         </form>
       </div>
 
-      <iframe class="video-player" src="{{ video.url }}" frameborder="0" allowfulscreen></iframe>
+      <iframe class="video-player" src="{{video.url}}" frameborder="0" allowfulscreen></iframe>
 
       <div class="video-description">
-        <p>{{ video.description }}</p>
+        <p>{{video.description}}</p>
       </div>
     </div>
   </div>

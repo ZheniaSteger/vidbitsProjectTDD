@@ -11,8 +11,10 @@ router.get('/videos/create', (req, res) => {
   res.render('videos/create');
 });
 
-router.get('/videos/:id', async (req, res) => {
-  const video = await findVideo(req);
+router.get('/videos/show/:id', async (req, res) => {
+
+  const id = req.params.id;
+  const video = await Video.findById(id);
   res.render('videos/show', {video});
 });
 
